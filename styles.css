@@ -11,4 +11,18 @@ canvas {
   border: 2px solid black;
   display: block;
   margin: 60px auto;
+  /*transform: rotate(180deg);*/  /*opposite day leve*/
 }
+
+
+/*canvas:hover {
+  animation-name: rotate;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes rotate {
+  from {transform: rotate(0deg);}
+  to{transform: rotate(360deg);}
+}*/
