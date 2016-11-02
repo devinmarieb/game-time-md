@@ -14,8 +14,8 @@ canvas {
   /*transform: rotate(180deg);*/  /*opposite day leve*/
 }
 
-
-/*canvas:hover {
+/*
+canvas:hover {
   animation-name: rotate;
   animation-duration: 10s;
   animation-iteration-count: infinite;
