@@ -26,8 +26,5 @@ describe('Ball', function(){
       assert.equal(ball.y, 344);
     });
 
-
-
-
   });
 });
