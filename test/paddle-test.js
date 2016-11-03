@@ -7,30 +7,31 @@ describe('Paddle', function(){
     var canvas = { width:800, height:500 }
 
     it('should be a thing', function() {
-      var paddle = new Paddle(400, 450, 150, 20, canvas);
+      var paddle = new Paddle({ x:325, y:450, width:150, height:10 });
       assert.isObject(paddle);
     });
 
     it('should moveLeft()', function() {
-      var paddle = new Paddle(400, 450, 150, 20, canvas);
+      var paddle = new Paddle({ x:325 });
       paddle.moveLeft();
-      assert.equal(paddle.x, 399);
+      assert.equal(paddle.x, 324);
     });
 
     it('should not be able to move left if at left canvas edge', function() {
-      var paddle = new Paddle(0, 450, 150, 20, canvas);
+      var paddle = new Paddle({ x:0 });
       paddle.moveLeft();
       assert.equal(paddle.x, 0);
     });
 
     it('should moveRight()', function() {
-      var paddle = new Paddle(400, 450, 150, 20, canvas);
+      var paddle = new Paddle({ x:325 }, canvas);
       paddle.moveRight();
-      assert.equal(paddle.x, 401);
+      assert.equal(paddle.x, 326);
     });
 
-    it('should not be able to move left if at left canvas edge', function() {
-      var paddle = new Paddle(650, 450, 150, 20, canvas);
+
+    it('should not be able to move right if at left canvas edge', function() {
+      var paddle = new Paddle({ x:650, y:450, width:150 }, canvas);
       paddle.moveRight();
       assert.equal(paddle.x, 650);
     });
