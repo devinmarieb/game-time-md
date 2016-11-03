@@ -1,0 +1,3 @@
+require('./paddle-test.js');
+require('./ball-test.js');
+// require('./blocks-test.js');
