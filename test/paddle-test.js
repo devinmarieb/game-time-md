@@ -14,7 +14,7 @@ describe('Paddle', function(){
     it('should moveLeft()', function() {
       var paddle = new Paddle({ x:325 });
       paddle.moveLeft();
-      assert.equal(paddle.x, 324);
+      assert.equal(paddle.x, 295);
     });
 
     it('should not be able to move left if at left canvas edge', function() {
@@ -24,9 +24,9 @@ describe('Paddle', function(){
     });
 
     it('should moveRight()', function() {
-      var paddle = new Paddle({ x:325 }, canvas);
+      var paddle = new Paddle({ x:325, y:450, width:150 }, canvas);
       paddle.moveRight();
-      assert.equal(paddle.x, 326);
+      assert.equal(paddle.x, 355);
     });
 
 
