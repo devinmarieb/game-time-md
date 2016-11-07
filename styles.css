@@ -52,6 +52,15 @@ article {
   text-align: center;
 }
 
+p {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.names {
+  font-weight: bold;
+}
+
 
 /*canvas:hover {
   animation-name: rotate;
