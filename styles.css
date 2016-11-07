@@ -11,7 +11,7 @@ canvas {
   background-color: #FFFFFF;
   border: 2px solid black;
   display: block;
-  margin: 60px auto;
+  margin: 20px auto;
   /*transform: rotate(180deg);*/  /*opposite day leve*/
 }
 
@@ -50,6 +50,11 @@ article {
 .lives {
   display: block;
   text-align: center;
+}
+
+.start-over-button {
+  display: block;
+  margin: auto;
 }
 
 
