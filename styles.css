@@ -1,60 +1,88 @@
 body {
   background-color: #BADA55;
+  font-family: 'Indie Flower', cursive;
 }
 
 h1 {
   text-align: center;
-  font-size: 20pt;
+  font-size: 38pt;
+  margin: 0px;
 }
 
 canvas {
   background-color: #FFFFFF;
   border: 2px solid black;
   display: block;
-  margin: 20px auto;
+  margin: 10px auto;
   /*transform: rotate(180deg);*/  /*opposite day leve*/
 }
-
 
 section {
   display: flex;
   justify-content: center;
 }
 
-article {
+.background-changer {
   display: inline-block;
   height: 10px;
   width: 50px;
   margin: 5px;
-}
-
-.backgroundOne {
-  background-color: #C0FFEE;
   border: 1px solid black;
-}
-
-.backgroundTwo {
-  background-color: #DEBB1E;
-  border: 1px solid black;
-}
-
-.backgroundThree {
-  background-color: #BADA55;
-  border: 1px solid black;
-}
-
-.background-theme {
-  font-size: 28pt;
-}
-
-.lives {
-  display: block;
+  height: 15px;
   text-align: center;
 }
 
+#backgroundOne {
+  background-color: #C0FFEE;
+}
+
+#backgroundTwo {
+  background-color: #C00C00;
+}
+
+#backgroundThree {
+  background-color: #BADA55;
+}
+
+.background-theme {
+  font-size: 38pt;
+}
+
+.lives {
+  display: inline-block;
+  text-align: center;
+  font-size: 24px;
+  margin: 5px;
+  margin-bottom: 0px;
+  margin-right: 20px;
+}
+
 .start-over-button {
-  display: block;
+  display: inline-block;
   margin: auto;
+  margin-bottom: 0px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.start-over-button:focus {
+  border: none;
+  outline: none;
+}
+
+.start-over-button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+.game-features {
+  text-align: center;
+  display: block;
+
 }
 
 
