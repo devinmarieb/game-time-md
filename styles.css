@@ -5,8 +5,12 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 38pt;
+  font-size: 30pt;
   margin: 0px;
+}
+
+.background-theme {
+  font-size: 30pt;
 }
 
 canvas {
@@ -17,42 +21,46 @@ canvas {
   /*transform: rotate(180deg);*/  /*opposite day leve*/
 }
 
-section {
+.color-selectors {
   display: flex;
   justify-content: center;
 }
 
 .background-changer {
   display: inline-block;
-  height: 10px;
-  width: 50px;
-  margin: 5px;
+  height: 30px;
+  width: 60px;
+  margin: 0px 5px;
   border: 1px solid black;
-  height: 15px;
   text-align: center;
+  border-radius: 5px;
 }
 
-#backgroundOne {
-  background-color: #C0FFEE;
+.background-changer:hover {
+  transform: scale(1.2) rotate(5deg);
+  cursor: pointer;
 }
 
-#backgroundTwo {
-  background-color: #C00C00;
-}
-
-#backgroundThree {
+#background-one {
   background-color: #BADA55;
 }
 
-.background-theme {
-  font-size: 38pt;
+#background-two {
+  background-color: #C00C00;
+}
+
+#background-three {
+  background-color: #C0FFEE;
+}
+
+#background-four {
+  background-color: #0B5E55;
 }
 
 .lives {
   display: inline-block;
   text-align: center;
-  font-size: 24px;
-  margin: 5px;
+  font-size: 35px;
   margin-bottom: 0px;
   margin-right: 20px;
 }
@@ -68,13 +76,12 @@ p {
 
 .start-over-button {
   display: inline-block;
-  margin: auto;
-  margin-bottom: 0px;
   background-color: black;
   color: white;
   border: none;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 16px;
+  padding: 5px 10px
 }
 
 .start-over-button:focus {
@@ -91,6 +98,7 @@ p {
 .game-features {
   text-align: center;
   display: block;
+  margin-top: -15px;
 }
 
 
