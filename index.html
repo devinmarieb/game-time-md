@@ -4,19 +4,21 @@
     <meta charset="utf-8">
     <title>Game Time</title>
     <link rel="stylesheet" href="styles.css" media="screen" title="no title">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
   </head>
   <body class = "body">
+    <h1> <span class="background-theme"> #BADA55 </span> BREAKOUT</h1>
     <section>
-      <article class="backgroundOne"></article>
-      <article class="backgroundTwo"></article>
-      <article class="backgroundThree"></article>
+      <article id="backgroundOne" class="background-changer"></article>
+      <article id="backgroundTwo" class="background-changer"></article>
+      <article id="backgroundThree" class="background-changer"></article>
     </section>
-    <h1> breakout { background-color: <span class="background-theme"> #BADA55 </span> } </h1>
-    <h3 class="lives"> Lives: <span class="life-counter"></span></h3>
-
+    <section class="game-features">
+      <h3 class="lives"> Lives: <span class="life-counter"></span></h3>
+      <button class="start-over-button">Try Again</button>
+    </section>
     <canvas id="canvas" width="800" height="500"></canvas>
 
-    <button class="start-over-button">Try Again</button>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- <script src="lib/index.js"></script> -->
     <script src="main.bundle.js"></script>
