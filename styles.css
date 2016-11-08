@@ -65,6 +65,15 @@ canvas {
   margin-right: 20px;
 }
 
+p {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.names {
+  font-weight: bold;
+}
+
 .start-over-button {
   display: inline-block;
   background-color: black;
