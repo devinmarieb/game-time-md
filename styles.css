@@ -41,16 +41,20 @@ canvas {
   cursor: pointer;
 }
 
-#backgroundOne {
-  background-color: #C0FFEE;
+#background-one {
+  background-color: #BADA55;
 }
 
-#backgroundTwo {
+#background-two {
   background-color: #C00C00;
 }
 
-#backgroundThree {
-  background-color: #BADA55;
+#background-three {
+  background-color: #C0FFEE;
+}
+
+#background-four {
+  background-color: #0B5E55;
 }
 
 .lives {
