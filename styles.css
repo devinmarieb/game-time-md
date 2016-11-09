@@ -18,6 +18,7 @@ canvas {
   border: 2px solid black;
   display: block;
   margin: 10px auto;
+  margin-bottom: 0px;
   /*transform: rotate(180deg);*/  /*opposite day leve*/
 }
 
@@ -54,7 +55,7 @@ canvas {
 }
 
 #background-four {
-  background-color: #0B5E55;
+  background-color: #0DD;
 }
 
 .lives {
@@ -68,6 +69,7 @@ canvas {
 p {
   text-align: right;
   margin-right: 10px;
+  margin: 0px;
 }
 
 .names {
