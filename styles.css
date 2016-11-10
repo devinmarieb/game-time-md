@@ -19,7 +19,6 @@ canvas {
   display: block;
   margin: 10px auto;
   margin-bottom: 0px;
-  /*transform: rotate(180deg);*/  /*opposite day leve*/
 }
 
 .color-selectors {
@@ -29,7 +28,7 @@ canvas {
 
 .background-changer {
   display: inline-block;
-  height: 30px;
+  height: 20px;
   width: 60px;
   margin: 0px 5px;
   border: 1px solid black;
@@ -58,18 +57,17 @@ canvas {
   background-color: #0DD;
 }
 
-.lives {
+.player-status {
   display: inline-block;
   text-align: center;
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 0px;
   margin-right: 20px;
 }
 
 p {
-  text-align: right;
-  margin-right: 10px;
-  margin: 0px;
+  text-align: center;
+  margin: 70px;
 }
 
 .names {
@@ -77,13 +75,14 @@ p {
 }
 
 .start-over-button {
-  display: inline-block;
+  display: block;
   background-color: black;
   color: white;
   border: none;
   border-radius: 5px;
   font-size: 16px;
-  padding: 5px 10px
+  padding: 5px 10px;
+  margin: 10px auto;
 }
 
 .start-over-button:focus {
