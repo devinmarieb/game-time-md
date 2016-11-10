@@ -69,7 +69,10 @@ describe('Game', function() {
       };
     });
 
-    
+    // it('should change direction when ball hits paddle') {
+    //   var paddle = new Paddle({})
+    //
+    // }
 
   });
 });
