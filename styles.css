@@ -3,7 +3,7 @@ body {
   font-family: 'Indie Flower', cursive;
 }
 
-h1 {
+.title {
   text-align: center;
   font-size: 30pt;
   margin: 0px;
@@ -32,13 +32,13 @@ canvas {
   width: 60px;
   margin: 0px 5px;
   border: 1px solid black;
-  text-align: center;
   border-radius: 5px;
+  text-align: center;
 }
 
 .background-changer:hover {
-  transform: scale(1.2) rotate(5deg);
   cursor: pointer;
+  transform: scale(1.2) rotate(5deg);
 }
 
 #background-one {
@@ -59,15 +59,15 @@ canvas {
 
 .player-status {
   display: inline-block;
-  text-align: center;
-  font-size: 30px;
   margin-bottom: 0px;
   margin-right: 20px;
+  font-size: 30px;
+  text-align: center;
 }
 
-p {
-  text-align: center;
+.credit {
   margin: 5px;
+  text-align: center;
 }
 
 .names {
@@ -76,13 +76,13 @@ p {
 
 .start-over-button {
   display: block;
+  margin: 10px auto;
+  padding: 5px 10px;
   background-color: black;
-  color: white;
   border: none;
   border-radius: 5px;
+  color: white;
   font-size: 16px;
-  padding: 5px 10px;
-  margin: 10px auto;
 }
 
 .start-over-button:focus {
@@ -97,9 +97,9 @@ p {
 }
 
 .game-features {
-  text-align: center;
   display: block;
   margin-top: -15px;
+  text-align: center;
 }
 
 .rotateDatCanvas {
