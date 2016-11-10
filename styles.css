@@ -103,8 +103,7 @@ p {
   margin-top: -15px;
 }
 
-
-/*canvas:hover {
+.rotateDatCanvas {
   animation-name: rotate;
   animation-duration: 10s;
   animation-iteration-count: infinite;
@@ -114,4 +113,4 @@ p {
 @keyframes rotate {
   from {transform: rotate(0deg);}
   to{transform: rotate(360deg);}
-}*/
+}

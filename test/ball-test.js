@@ -10,42 +10,59 @@ describe('Ball', function(){
     var canvas = { width:800, height:500 }
 
     it('should be a thing', function() {
-      var ball = new Ball({ x:400, y:350, radius:10 });
+      var ball = new Ball({});
       assert.isObject(ball);
     });
 
-    it('should move right', function() {
-      var ball = new Ball({ x:400, y:350 });
-      ball.directionRight();
-      assert.equal(ball.x, 406);
+    it('should have a default radius', function() {
+      var ball = new Ball({});
+      assert.equal(ball.radius, 10);
     });
 
-    it('should move left', function() {
-      var ball = new Ball({ x:400, y:350 });
-      ball.directionDown();
+    it('should have a default x coordinate', function() {
+      var ball = new Ball({});
       assert.equal(ball.x, 400);
     });
 
-    it('should move up', function() {
-      var ball = new Ball({ x:400, y:350 });
-      ball.directionUp();
-      assert.equal(ball.y, 344);
+    it('should have a default y coordinate', function() {
+      var ball = new Ball({});
+      assert.equal(ball.y, 480);
     });
 
-    it('should move down', function() {
-      var ball = new Ball({ x:400, y:350 })
-      ball.directionDown();
-      assert.equal(ball.y, 356);
+    it('should have a default speed parameter', function() {
+      var ball = new Ball({});
+      assert.equal(ball.speed, 6);
     });
 
-    it('should change direction on X axis', function() {
-      var ball = new Ball({ x:400, y:350 })
+    it('should have a default speedX of 0', function() {
+      var ball = new Ball({});
+      assert.equal(ball.speedX, 0);
+    });
+
+    it('should have a default speedY of 0', function() {
+      var ball = new Ball({});
+      assert.equal(ball.speedY, 0);
+    });
+
+    it('should have a change directionX method', function() {
+      var ball = new Ball({})
+      assert.isFunction(ball.changeDirectionX);
+    });
+
+    it('should have a change directionY method', function() {
+      var ball = new Ball({})
+      assert.isFunction(ball.changeDirectionY);
+    });
+
+
+    it('should change direction on X axis if method is called', function() {
+      var ball = new Ball({ speedX: 6 })
       ball.changeDirectionX();
       assert.equal(ball.speedX, -6);
     });
 
-    it('should change direction on Y axis', function() {
-      var ball = new Ball({ x:400, y:350 })
+    it('should change direction on Y axis if method is called', function() {
+      var ball = new Ball({ speedY: 6 })
       ball.changeDirectionY();
       assert.equal(ball.speedY, -6)
     })
