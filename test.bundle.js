@@ -9410,11 +9410,6 @@
 	        assert.equal(ball.x, ball.x + 6);
 	      };
 	    });
-
-	    // it('should change direction when ball hits paddle') {
-	    //   var paddle = new Paddle({})
-	    //
-	    // }
 	  });
 	});
 
