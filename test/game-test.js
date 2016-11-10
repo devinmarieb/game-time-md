@@ -7,7 +7,7 @@ const Game = require('../lib/game');
 
 
 
-describe('Game', function(){
+describe('Game', function() {
   context('with default attributes', function() {
     var canvas = { width:800, height:500 };
     var game = new Game({});

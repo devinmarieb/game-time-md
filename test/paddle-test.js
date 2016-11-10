@@ -2,7 +2,7 @@ const chai = require('chai');
 const assert = chai.assert;
 const Paddle = require('../lib/paddle');
 
-describe('Paddle', function(){
+describe('Paddle', function() {
   context('with default attributes', function() {
     var canvas = { width:800, height:500 }
     var paddle = new Paddle({});
@@ -29,7 +29,6 @@ describe('Paddle', function(){
       var paddle = new Paddle({ height:67 });
       assert.equal(paddle.height, 67);
     });
-
 
     it('should have default x coordinate', function() {
       assert.equal(paddle.x, 325);

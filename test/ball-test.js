@@ -5,7 +5,7 @@ const Ball = require('../lib/ball');
 //in the context of testing the Y cooridinate, the tests treat Y as a decrement
 //where as our Y in canvas is an increment.
 
-describe('Ball', function(){
+describe('Ball', function() {
   context('with default attributes', function() {
     var canvas = { width:800, height:500 }
     var ball = new Ball({});
