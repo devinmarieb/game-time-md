@@ -7,40 +7,67 @@ const Game = require('../lib/game');
 
 
 
-describe('game', function(){
+describe('Game', function(){
   context('with default attributes', function() {
-    var canvas = { width:800, height:500 }
-
-  it('should be a thing that holds all the stuffs', function() {
-    var game = new Game({});
-    assert.isObject(game);
-  });
-
-  it('should know when the ball hits the paddle', function() {
+    var canvas = { width:800, height:500 };
     var game = new Game({});
     var ball = new Ball({});
-    var paddle = new Paddle({});
-    if(ball.x === 325 && ball.y === 490){
-    assert.equal(ball.x, paddle.x)
-    }
-  });
 
-  it('should know when the ball hits a block', function() {
-    var game = new Game({});
-    var ball = new Ball({});
-    var block = new Block({});
-    if(ball.x === 0 && ball.y === 0){
-      assert.equal(ball.x, block.x);
-    }
-  });
+    it('should be a thing that holds all the stuffs', function() {
+      assert.isObject(game);
+    });
 
-  it('should know when the ball hits a wall', function() {
-    var game = new Game({});
-    var ball = new Ball({});
-    if(ball.x === 800){
-      assert.equal(ball.x, canvas.width)
-    }
-  })
+    it('should know when the ball is at the right wall', function() {
+      if(ball.x + ball.radius === 800) {
+        assert.equal(ball.x, canvas.width);
+      };
+    });
+
+    it('should know when the ball is at the left wall', function() {
+      if(ball.x - ball.radius === 0) {
+        assert.equal(ball.x, canvas.width - canvas.width);
+      };
+    });
+
+    it('should know when the ball is at the bottom wall', function() {
+      if(ball.y + ball.radius === 500) {
+        assert.equal(ball.y, canvas.height);
+      };
+    });
+
+    it('should know when the ball is at the top wall', function() {
+      if(ball.y - ball.radius === 0) {
+        assert.equal(ball.y, canvas.height - canvas.height)
+      };
+    });
+
+    it('should change ball direction if ball hits top wall', function() {
+      if(ball.y - ball.radius === canvas.height - canvas.height) {
+        ball.changeDirectionY();
+        assert.equal(ball.y, ball.y +6);
+      };
+    });
+
+    it('should change ball direction if ball hits bottom wall', function() {
+      if(ball.y + ball.radius === canvas.height) {
+        ball.changeDirectionY();
+        assert.equal(ball.y, ball.y -6);
+      };
+    });
+
+    it('should change ball direction if ball hits right wall', function() {
+      if(ball.x + ball.radius === canvas.width) {
+        ball.changeDirectionX();
+        assert.equal(ball.x, ball.x -6);
+      };
+    });
+
+    it('should change ball direction if ball hits left wall', function() {
+      if(ball.x - ball.radius === canvas.width - canvas.width) {
+        ball.changeDirectionX();
+        assert.equal(ball.x, ball.x +6);
+      };
+    });
 
   });
 });

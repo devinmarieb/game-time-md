@@ -57,7 +57,5 @@ describe('Paddle', function(){
       assert.isFunction(paddle.draw);
     });
 
-
-
   });
 });
