@@ -59,11 +59,11 @@
 	    game.run();
 	    requestAnimationFrame(gameLoop);
 	    if (game.level === 1) {
-	      $('.body').css({ 'background-image': 'url(level1.png)' });
+	      $('.body').css({ 'background-image': 'url(./level1.png)' });
 	    } else if (game.level === 2) {
-	      $('.body').css({ 'background-image': 'url(level2.png)' });
+	      $('.body').css({ 'background-image': 'url(./level2.png)' });
 	    } else if (game.level === 3) {
-	      $('.body').css({ 'background-image': 'url(level3.png)' });
+	      $('.body').css({ 'background-image': 'url(./level3.png)' });
 	    }
 	  });
 	};
